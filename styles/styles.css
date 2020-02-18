@@ -1,0 +1,296 @@
+
+/*------------------------*/
+/* BASIC SETUP*/
+/*------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    background-color: whitesmoke;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+/*------------------------*/
+/* REUSABLE COMPONENTS*/
+/*------------------------*/
+
+.row {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+
+.box {
+    padding: 1%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+
+/*------------------------*/
+/* Main Navi*/
+/*------------------------*/
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding-top: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 2px #efefef;
+}
+
+
+.logo {
+    height: 37px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.main-nav {
+
+    position: sticky;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.main-nav li {
+    list-style: none;
+    float: right;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: inherit;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+
+    border-bottom: 2px solid #ccc;
+}
+
+
+
+/*------------------------*/
+/* Form */
+/*------------------------*/
+
+#form {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#form * {
+    margin: 0.4%;
+}
+
+#form #email {
+    padding: 7px 100px 7px 2px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#form button {
+    background-color: orange;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 200px;
+    text-align: center;
+    padding: 8px 32px;
+    border: 1px solid orange;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+#form button:hover {
+    background-color: #ff8c00 ;
+    border: 1px solid #ff8c00;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*------------------------*/
+/* Features */
+/*------------------------*/
+
+.left {
+    width: 30%;
+    float: left;
+    display: block;
+    text-align: right;
+}
+
+.right {
+    width: 70%;
+    float: right;
+    display: block;
+}
+
+.left > div > i {
+    margin-bottom: 10%;
+    padding-right: 30%;
+    padding-top: 1%;
+}
+
+
+.features {
+    margin-bottom: 1%;
+
+}
+
+/*------------------------*/
+/* embed video */
+/*------------------------*/
+
+.video {
+    text-align: center;
+}
+
+
+
+/*------------------------*/
+/* Products */
+/*------------------------*/
+
+
+.product {
+    border: 1px solid black;
+    text-align: center;
+    width: 29.6%;
+    float: left;
+    display: block;
+    margin: 1.6%;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 2px #efefef;
+}
+
+.product * {
+    padding: 2.3%;
+}
+
+
+.product-name {
+    background-color: #e1e1e1;
+}
+
+.product button {
+    background-color: orange;
+    font-weight: 200;
+    font-size: 1.1em;
+    border-radius: 200px;
+    text-align: center;
+    padding: 8px 32px;
+    border: 1px solid yellow;
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.product button:hover {
+    background-color: #ffff99;
+    border: 1px solid #ffff00;
+}
+
+
+/*------------------------*/
+/* Footer */
+/*------------------------*/
+
+
+
+footer {
+    background-color: #c7c7c7;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+.footer-nav {
+    list-style: none;
+    float: right;
+    padding: 1px;
+    
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-left:  5px;
+    font-size: 80%;
+    color: #2c2c2c;
+
+}
+
+.copyright {
+    float: right;
+    font-size: 60%;
+    padding: 1px;
+    display: inline-block;
+
+}
+
+
+
+
+
+
+
